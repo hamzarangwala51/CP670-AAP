@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">असाइनमेंट 1</string>
     <string name = "hello_message">हैलो वर्ल्ड</string>
-    <string name = "ButtonText" >मैं\एक बटन हूँ </string>
+    <string name = "ButtonText" >मैं \एक बटन हूँ </string>
 </resources>
