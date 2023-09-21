@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">असाइनमेंट 1</string>
+    <string name="Login">लॉग इन </string>
+    <string name="email">लॉगिन नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="passhint">पासवर्ड यहाँ</string>
     <string name = "hello_message">हैलो वर्ल्ड</string>
     <string name = "ButtonText" >मैं \एक बटन हूँ </string>
 </resources>
