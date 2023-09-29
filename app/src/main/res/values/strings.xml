@@ -6,4 +6,6 @@
     <string name="passhint">password here</string>
     <string name="hello_message">HelloWorld!</string>
     <string name="ButtonText"> I\'m a button </string>
+    <string name="dialog_message">Do you really want to Logout?</string>
+    <string name="dialog_title">Logout</string>
 </resources>

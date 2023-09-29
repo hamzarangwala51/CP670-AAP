@@ -7,4 +7,6 @@
     <string name="passhint">पासवर्ड यहाँ</string>
     <string name = "hello_message">हैलो वर्ल्ड</string>
     <string name = "ButtonText" >मैं \एक बटन हूँ </string>
+    <string name="dialog_message">क्या आप सचमुच लॉगआउट करना चाहते हैं?</string>
+    <string name="dialog_title">लॉग आउट</string>
 </resources>
