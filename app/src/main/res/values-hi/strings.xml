@@ -9,4 +9,9 @@
     <string name = "ButtonText" >मैं \एक बटन हूँ </string>
     <string name="dialog_message">क्या आप सचमुच लॉगआउट करना चाहते हैं?</string>
     <string name="dialog_title">लॉग आउट</string>
+    <string name="chtbtn">बातचीत शुरू कीजिए</string>
+    <string name="sendbtnOnChat">भेजना</string>
+    <string name="ChatActivity_name">चैट गतिविधि</string>
+    <string name="MainActivity_name">मुख्य गतिविधि</string>
+    <string name="ListitemActivity_name">सूची आइटम गतिविधि</string>
 </resources>

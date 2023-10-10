@@ -1,4 +1,4 @@
-package com.example.androidassignments;
+package Assignment2_3.assignment2_3;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidassignments.R;
+
 public class MainActivity extends AppCompatActivity {
     String Resume,StartMsg,Pause,Stop,Destroy,onSaveInstanceState,onRestoreInstanceState;
     String ACTIVITY_NAME;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(getString(R.string.MainActivity_name));
         Button btn = findViewById(R.id.main_button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode==10&& responseCode ==Activity.RESULT_OK){
             Log.i(ACTIVITY_NAME, "Returned to MainActivity.onActivityResult");
         }
+    }
+    public void chtbtnFunc(View view){
+        Log.i(ACTIVITY_NAME,"User clicked Start Chat");
+        Intent intent = new Intent(this, ChatWindow.class);
+        startActivity(intent);
+
     }
     protected void onResume() {
         super.onResume();

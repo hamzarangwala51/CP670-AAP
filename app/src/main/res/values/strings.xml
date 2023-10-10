@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Assignment 1</string>
+    <string name="app_name">Assignment</string>
+    <string name="ChatActivity_name">Chat Activity</string>
+    <string name="MainActivity_name">Main Activity</string>
+    <string name="ListitemActivity_name">Listitem Activity</string>
     <string name="Login">Login</string>
     <string name="email">Login name</string>
     <string name="password">password</string>
@@ -8,4 +11,6 @@
     <string name="ButtonText"> I\'m a button </string>
     <string name="dialog_message">Do you really want to Logout?</string>
     <string name="dialog_title">Logout</string>
+    <string name="chtbtn">Start Chat</string>
+    <string name="sendbtnOnChat">Send</string>
 </resources>

@@ -1,10 +1,8 @@
-package com.example.androidassignments;
+package Assignment2_3.assignment2_3;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,9 +15,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import com.example.androidassignments.R;
 
 public class ListItemsActivity extends AppCompatActivity {
     int REQUEST_IMAGE_CAPTURE;
@@ -28,6 +27,7 @@ public class ListItemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
+        setTitle(getString(R.string.ListitemActivity_name));
     Switch mySwitch = findViewById(R.id.switch1);
     mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
         @Override
