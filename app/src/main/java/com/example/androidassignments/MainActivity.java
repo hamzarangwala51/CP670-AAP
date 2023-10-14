@@ -1,4 +1,4 @@
-package Assignment2_3.assignment2_3;
+package com.example.androidassignments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.androidassignments.R;
 
 public class MainActivity extends AppCompatActivity {
     String Resume,StartMsg,Pause,Stop,Destroy,onSaveInstanceState,onRestoreInstanceState;

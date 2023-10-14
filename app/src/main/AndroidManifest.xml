@@ -21,11 +21,11 @@
 
 
         <activity
-            android:name="Assignment2_3.assignment2_3.ChatWindow"
+            android:name=".ChatWindow"
             android:exported="false"
             />
         <activity
-            android:name="Assignment2_3.assignment2_3.ListItemsActivity"
+            android:name=".ListItemsActivity"
             android:exported="true">
 
             <!-- <intent-filter> -->
@@ -36,7 +36,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="Assignment2_3.assignment2_3.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             >
 
@@ -49,11 +49,11 @@
         </activity>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="Assignment2_3.assignment2_3.LoginActivity"/>
+            android:value=".LoginActivity"/>
         <activity
-            android:name="Assignment2_3.assignment2_3.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
-            android:parentActivityName="Assignment2_3.assignment2_3.LoginActivity"
+            android:parentActivityName=".LoginActivity"
             >
 
 

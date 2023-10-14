@@ -1,4 +1,4 @@
-package Assignment2_3.assignment2_3;
+package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.androidassignments.R;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText emailid;

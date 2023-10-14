@@ -1,4 +1,4 @@
-package Assignment2_3.assignment2_3;
+package com.example.androidassignments;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +17,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
-
-import com.example.androidassignments.R;
 
 public class ListItemsActivity extends AppCompatActivity {
     int REQUEST_IMAGE_CAPTURE;

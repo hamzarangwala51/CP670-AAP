@@ -1,4 +1,4 @@
-package Assignment2_3.assignment2_3;
+package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.example.androidassignments.R;
 
 import java.util.ArrayList;
 
