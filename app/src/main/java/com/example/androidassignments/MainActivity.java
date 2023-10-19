@@ -26,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 10);
             }
         });
+        Button btnStartTestToolbar = findViewById(R.id.btnStartTestToolbar);
+        btnStartTestToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TestToolbar.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onActivityResult(int requestCode, int responseCode, Intent data) {

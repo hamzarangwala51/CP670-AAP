@@ -12,6 +12,7 @@
 
     <RadioButton
         android:id="@+id/radioButton"
+        style="@style/ButtonStyle"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
