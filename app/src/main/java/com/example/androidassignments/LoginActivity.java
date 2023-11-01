@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText emailaddr = findViewById(R.id.emailfld);
         EditText passwrdtext = findViewById(R.id.psswdtxt);
         String emailStr = emailaddr.getText().toString().trim();
-        if(emailStr!=null&& passwrdtext.getText().toString().length()>8){
+        if(passwrdtext.getText().toString().length()>8){
             if(emailStr.length()>=1){
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                 if (emailStr.matches(emailPattern))
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
                     SharedPreferences.Editor myEdit = sh.edit();
                     myEdit.putString("emailid",emailaddr.getText().toString());
-                    myEdit.commit();
+                    myEdit.apply();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
