@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ImageView for the current weather -->
+
+    <Spinner
+        android:id="@+id/drop_down_list_city"
+        android:layout_width="276dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="66dp"
+        android:dropDownVerticalOffset="50dp"
+        android:overlapAnchor="false" />
+
+    <ImageView
+        android:id="@+id/imageView_current_weather"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+    android:contentDescription="Current Weather Image"/>
+
+    <!-- TextView for the current temperature -->
+    <TextView
+        android:id="@+id/textView_current_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_current_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Current Temp: 25°C" />
+
+    <!-- TextView for the min temperature -->
+    <TextView
+        android:id="@+id/textView_min_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_current_temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Min Temp: 20°C" />
+
+    <!-- TextView for the max temperature -->
+    <TextView
+        android:id="@+id/textView_max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_min_temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Max Temp: 30°C"
+        />
+
+    <!-- Normal progress bar (initially invisible) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_max_temp"
+        android:layout_marginTop="53dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
