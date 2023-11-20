@@ -9,14 +9,22 @@ import android.util.Log;
 
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Messages.db";
-    private  static  final  int VERSION_NUM = 4;
+    private  static  final  int VERSION_NUM = 7;
     public static final String TABLE_NAME = "messages";
     public static final String KEY_ID = "id";
     public static final String KEY_MESSAGE = "message";
+    private static ChatDatabaseHelper sInstance;
     public ChatDatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,VERSION_NUM);
     }
 
+
+    public static synchronized ChatDatabaseHelper getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new ChatDatabaseHelper(context.getApplicationContext());
+        }
+        return sInstance;
+    }
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTableQuery = "CREATE TABLE " + TABLE_NAME + " (" +

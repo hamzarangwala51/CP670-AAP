@@ -9,6 +9,6 @@ import org.junit.Test;
 public class ChatWindowTest extends TestCase {
     @Test
     public void testValidateMessage() {
-    assertTrue(ChatWindow.validateMessage(""));
+    assertTrue(ChatWindow.validateText(""));
     }
 }
